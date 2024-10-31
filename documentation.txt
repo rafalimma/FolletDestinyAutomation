@@ -1,0 +1,48 @@
+To run the checkout codes first, set the chrome to be open by the terminal so webdriver and Selenium can manipulate it
+
+Run in the Windows Power Shell:
+$chromeArgs = "--remote-debugging-port=9222 --user-data-dir=C:\chrome-profile"
+than
+Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe" -ArgumentList $chromeArgs
+
+DESTINY FOLLETT WEB ELEMENTS USED
+_____________________________________________________________________________________
+
+CHECKOUT ELEMENTS
+
+upper iframe
+<iframe _ngcontent-ng-c3284924071="" frameborder="0" class="iframe-class" id="Library Manager" src="https://iscbrazil.follettdestiny.com:443/common/welcome.jsp?portalMode=true&amp;appId=destiny-PVXD-ZHLM&amp;siteGuid=3E4E5AF3-8D04-4311-93AE-D2AAF928A9F1&amp;portalId=10fe688c-c74c-4336-b38d-76572f58742b&amp;authCode=S0FDC8C601B2847FDBFAB6F9CFAFF1A01.USA#Library Manager" aria-label="Library Manager" data-app="Library Manager">
+</iframe>
+
+Circulation button
+<button _ngcontent-ng-c2088923879="" class="menu-button ng-star-inserted menu-item-active" id="menuId-TopLevelCirculation"><div _ngcontent-ng-c2088923879="" class="submenu-name"><div _ngcontent-ng-c2088923879="">Circulation</div><!----></div></button>
+
+Find Patron name input
+<input type="text" name="searchString" value="" maxlength="1000" autocomplete="off">
+
+Find Patron button
+<input type="image" name="patron" id="patron" src="/images/en/buttons/large/findpatron.gif?cachevers=4" alt="Find Patron" title="Find Patron">
+
+Patron Link
+<td class="ColRow">
+    <a href="/circulation/servlet/handlecheckoutform.do?searchLocalPatronsOnly=true&amp;collectionType=0&amp;patronid=65757&amp;patronlist=1&amp;searchLocalPatronsOnly=true&amp;toTeacherMode=false">Lima, Rafael</a></td>
+
+Barcode input
+<input type="text" name="searchString" value="" maxlength="1000" autocomplete="off">
+Enter
+
+_____________________________________________________________________________________
+
+CHECKIN ELEMENTS
+
+upper iframe
+<iframe _ngcontent-ng-c3284924071="" frameborder="0" class="iframe-class" id="Library Manager" src="https://iscbrazil.follettdestiny.com:443/common/welcome.jsp?portalMode=true&amp;appId=destiny-PVXD-ZHLM&amp;siteGuid=3E4E5AF3-8D04-4311-93AE-D2AAF928A9F1&amp;portalId=10fe688c-c74c-4336-b38d-76572f58742b&amp;authCode=S0FDC8C601B2847FDBFAB6F9CFAFF1A01.USA#Library Manager" aria-label="Library Manager" data-app="Library Manager">
+</iframe>
+
+side bar checkin option
+<a id="Check In" href="/circulation/servlet/presentcheckinform.do?l2m=Check%20In&amp;collectionType=0" accesskey="I"><span>Check <em class="d-accesskey">I</em>n</span></a>
+
+barcode input
+<input type="text" name="barcode" maxlength="1000" value="" autocomplete="off">
+
+
