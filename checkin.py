@@ -46,3 +46,10 @@ barcode_input.click()
 barcode_input.send_keys(barcode + Keys.RETURN)
 
 print('Check in feito')
+
+chrome_browser.switch_to.default_content()
+
+home_button = WebDriverWait(chrome_browser, WAIT_TIME).until(
+    EC.visibility_of_element_located((By.XPATH, "//div[contains(text(), 'Home')]"))
+)
+home_button.click()
